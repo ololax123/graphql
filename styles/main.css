@@ -1,0 +1,301 @@
+
+
+
+#Title {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  margin: 5px;
+  padding: 5px;
+  color: #fff;
+  border-radius: 2px;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+  transition: all 0.2s ease-in-out;
+}
+
+#Title:hover {
+  font-size: 2.2rem;
+  padding: 7px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+}
+rect {
+  transition: fill 0.2s ease; /* Add smooth color transition on hover */
+  cursor: pointer; /* Change cursor to a pointer on hover */
+}
+
+rect:hover {
+  fill: #ea4c88; /* Change the fill color on hover */
+}
+  
+#infoBox {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+#chart-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+#audit, #skills, #line {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin: 50px;
+  padding: 1px;
+  background-color: #4cea51;
+  border: 1px solid #fff;
+  border-radius: 30px;
+  box-shadow: 0px 10px 2px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+#audit-ratio {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin: 5px;
+  padding: 1px;
+  background-color: #4cea4f;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  box-shadow: 0px 10px 2px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+#audit:hover, #skills:hover, #line:hover, #audit-ratio:hover {
+  background-color: #15f309;
+  transform: scale(1.1);
+}
+
+
+#chart {
+    width: 100%;
+    height: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+#chart-line {
+    width: 100%;
+    height: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+/* user-data */
+#user-welcome {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+/* logout-btn */
+#logout-btn {
+    position:fixed;
+    right:10px;
+    top:5px;
+    cursor: pointer;
+    background-color: #4cea51;
+    border: 2px solid #fff;
+    color: white;
+    border-radius: 4px;
+    padding: 10px;
+    width: auto;
+    
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+}
+
+/* from login.css */
+
+@use postcss-preset-env {
+    stage: 0;
+  }
+  
+  /* config.css */
+  
+  :root {
+    --baseColor: #eceded;
+  }
+  
+  /* helpers/align.css */
+  
+  .align {
+    display: grid;
+    place-items: center;
+  }
+  
+  .grid {
+    inline-size: 90%;
+    margin-inline: auto;
+    max-inline-size: 20rem;
+  }
+  
+  /* helpers/hidden.css */
+  
+  .hidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+  
+  /* helpers/icon.css */
+  
+  :root {
+    --iconFill: var(--baseColor);
+  }
+  
+  .icons {
+    display: none;
+  }
+  
+  .icon {
+    block-size: 1em;
+    display: inline-block;
+    fill: var(--iconFill);
+    inline-size: 1em;
+    vertical-align: middle;
+  }
+  
+  /* layout/base.css */
+  
+  :root {
+    --htmlFontSize: 100%;
+  
+    --bodyBackgroundColor: #2c3338;
+    --bodyColor: var(--baseColor);
+    --bodyFontFamily: "Open Sans";
+    --bodyFontFamilyFallback: sans-serif;
+    --bodyFontSize: 0.875rem;
+    --bodyFontWeight: 400;
+    --bodyLineHeight: 1.5;
+  }
+  
+  * {
+    box-sizing: inherit;
+  }
+  
+  html {
+    box-sizing: border-box;
+    font-size: var(--htmlFontSize);
+  }
+  
+  body {
+    background-color: var(--bodyBackgroundColor);
+    color: var(--bodyColor);
+    font-family: var(--bodyFontFamily), var(--bodyFontFamilyFallback);
+    font-size: var(--bodyFontSize);
+    font-weight: var(--bodyFontWeight);
+    line-height: var(--bodyLineHeight);
+    margin: 0;
+    min-block-size: 100vh;
+  }
+  
+  /* modules/anchor.css */
+  
+  :root {
+    --anchorColor: #eee;
+  }
+  
+  a {
+    color: var(--anchorColor);
+    outline: 0;
+    text-decoration: none;
+  }
+  
+  a:focus,
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* modules/form.css */
+  
+  :root {
+    --formGap: 0.875rem;
+  }
+  
+  input {
+    background-image: none;
+    border: 0;
+    color: inherit;
+    font: inherit;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    transition: background-color 0.3s;
+  }
+  
+  input[type="submit"] {
+    cursor: pointer;
+  }
+  
+  .form {
+    display: grid;
+    gap: var(--formGap);
+  }
+
+  .text--center {
+    text-align: center;
+  }
+
+  path:hover {
+    transform: translate(0, -5px); /* Move the slice 5 pixels up on hover */
+    transition: transform 0.3s ease; /* Add a smooth transition */
+  }
+  
+  path:active {
+    transform: translate(0, 0); /* Reset the transform on mouse click */
+  }
+
+
+  .footer {
+    background-color: black;
+    color: white;
+    padding: 20px;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .social-links {
+    font-size: 24px;
+  }
+  
+  .social-links a {
+    color: white;
+    margin-right: 10px;
+  }
+  
+  .social-links a:last-child {
+    margin-right: 0;
+  }
+  
