@@ -25,9 +25,9 @@ loginForm.addEventListener('submit', async (event) => {
             localStorage.setItem('token', data);
 
             // Redirect to home page and store cookie
-            const homeUrl = 'http://localhost:5500/home.html';
+            const homeUrl = document.location.origin + '/home.html';
+            console.log('homeUrl', homeUrl);
             const url = new URL(homeUrl);
-            url.searchParams.set('token', data.token);
             window.location.href = url.toString();
         } else {
             throw new Error('Invalid credentials');
